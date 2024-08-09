@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="assets/style/style.css">
+
+  <title>Age calculator app</title>
+
+</head>
+<body>
+
+  <main>
+    <div class="date-input">
+      <div class="day">
+        <p>DAY</p>
+        <input id="day-input" type="number" placeholder="DD">
+      </div>
+      <div class="month">
+        <p>MONTH</p>
+        <input id="month-input" type="number" placeholder="MM">
+      </div>
+      <div class="year">
+        <p>YEAR</p>
+        <input id="year-input" type="number" placeholder="YYYY">
+      </div>
+    </div>
+
+    <div class="line">
+      <div class="hr-line">
+        <hr>
+      </div>
+      <div class="arrow">
+        <img src="/assets/images/icon-arrow.svg" alt="arrow" id="arrow-icon">
+      </div>
+    </div>
+
+    <div class="calculated-age">
+      <p><span class="blue-text" id="calculated-year">- -</span> years</p>
+      <p><span class="blue-text" id="calculated-month">- -</span> months</p>
+      <p><span class="blue-text" id="calculated-day">- -</span> days</p>
+    </div>
+
+  </main>
+
+  
+  <script src="./assets/scripts/date_validator.js" type="module"></script>
+  <script src="./assets/scripts/age_calculator.js" type="module"></script>
+</body>
+</html>
